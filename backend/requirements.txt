@@ -1,23 +1,50 @@
-# Core
+# ==========================================
+# RAG 企业知识库问答系统 - Python 依赖列表
+# ==========================================
+# 使用方法：pip install -r requirements.txt
+
+# --- Web 框架 ---
+# FastAPI: 高性能异步 Web 框架
 fastapi==0.115.6
+# Uvicorn: ASGI 服务器，用于运行 FastAPI
 uvicorn==0.34.0
+
+# --- 环境变量 ---
+# python-dotenv: 从 .env 文件加载环境变量
 python-dotenv==1.0.1
+
+# --- 文件上传 ---
+# python-multipart: 支持 multipart/form-data 文件上传
 python-multipart==0.0.12
+# aiofiles: 异步文件读写
 aiofiles==24.0.0
 
-# RAG & LLM
+# --- RAG 核心 ---
+# LangChain: LLM 应用开发框架
 langchain==0.3.9
 langchain-community==0.3.9
 langchain-core==0.3.10
+
+# --- 嵌入模型 ---
+# sentence-transformers: 文本嵌入和重排序模型
 sentence-transformers==3.3.1
+
+# --- 向量数据库 ---
+# faiss-cpu: Facebook AI 相似性搜索库（CPU 版本）
 faiss-cpu==1.9.0
+
+# --- 大模型接口 ---
+# ollama: Ollama Python SDK，调用本地部署的 Qwen3 模型
 ollama==0.4.4
 
-# Doc Parsing
+# --- 文档解析 ---
+# pypdf: PDF 文件解析
 pypdf==5.1.0
+# python-docx: Word 文档 (.docx) 解析
 python-docx==1.1.2
 
-# Database
+# --- 数据库 ---
+# SQLAlchemy: 数据库 ORM 框架
 sqlalchemy==2.0.36
-mysqlclient==2.2.7
+# PyMySQL: MySQL 数据库驱动
 pymysql==1.1.1
