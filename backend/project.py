@@ -23,6 +23,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse, JSONResponse
 
 # 导入 RAG 核心管道和文档解析器
+# 兼容两种启动方式：从 backend/ 目录运行 & 从项目根目录运行
+import sys, os
+_parent = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if _parent not in sys.path:
+    sys.path.insert(0, _parent)
 from backend.rag_core import RAGPipeline
 from backend.upload_handler import DocumentParser
 

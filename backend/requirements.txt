@@ -17,13 +17,13 @@ python-dotenv==1.0.1
 # python-multipart: 支持 multipart/form-data 文件上传
 python-multipart==0.0.12
 # aiofiles: 异步文件读写
-aiofiles==24.0.0
+aiofiles>=23.2.1
 
 # --- RAG 核心 ---
 # LangChain: LLM 应用开发框架
-langchain==0.3.9
-langchain-community==0.3.9
-langchain-core==0.3.10
+langchain>=0.3.9
+langchain-community>=0.3.9
+langchain-core>=0.3.21
 
 # --- 嵌入模型 ---
 # sentence-transformers: 文本嵌入和重排序模型
@@ -31,7 +31,7 @@ sentence-transformers==3.3.1
 
 # --- 向量数据库 ---
 # faiss-cpu: Facebook AI 相似性搜索库（CPU 版本）
-faiss-cpu==1.9.0
+faiss-cpu>=1.12.0
 
 # --- 大模型接口 ---
 # ollama: Ollama Python SDK，调用本地部署的 Qwen3 模型

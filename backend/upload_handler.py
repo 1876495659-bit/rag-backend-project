@@ -21,7 +21,11 @@ from dataclasses import dataclass, field
 from fastapi import UploadFile
 
 # 导入 LangChain 的文本切分器
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+# 新版 langchain 将 text_splitter 拆分为独立包
+try:
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+except ImportError:
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 
 # ==========================================
